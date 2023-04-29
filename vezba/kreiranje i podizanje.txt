@@ -20,3 +20,8 @@ Vagrant.configure("2") do |config|
 	systemctl restart apache2
    SHELL
   end
+  
+  
+  
+  #web01 ime virtuelne masine kreirana sa privatnim networkom i memorijom od 1gb, nakon toga ide instalacija apache2 servisa i  wget, unzip, jer ce
+  nam trebati za ekstraktovanje falja od template sajta, zatim pokrenemo apache servis i preuzmemo potrebne fajlove za pokretanje, restartujemo servis, i pristup sajtu imacemo tako sto u pretrazivacu ukucamo ip networka koji smo zadali na pocketu i to je nas link ka serveru
